@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B2FADF3-7A23-44AC-ACAB-108C9D09AAF0}|PortfolioRebalancer.Console\\PortfolioRebalancer.Console.csproj|c:\\users\\hp\\desktop\\milltech\\portfoliorebalancer\\portfoliorebalancer.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B2FADF3-7A23-44AC-ACAB-108C9D09AAF0}|PortfolioRebalancer.Console\\PortfolioRebalancer.Console.csproj|solutionrelative:portfoliorebalancer.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04AF82D-BD5B-41E9-B168-2149738C8975}|PortfolioRebalancer\\PortfolioRebalancer.csproj|c:\\users\\hp\\desktop\\milltech\\portfoliorebalancer\\portfoliorebalancer\\services\\exposurebalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04AF82D-BD5B-41E9-B168-2149738C8975}|PortfolioRebalancer\\PortfolioRebalancer.csproj|solutionrelative:portfoliorebalancer\\services\\exposurebalancer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04AF82D-BD5B-41E9-B168-2149738C8975}|PortfolioRebalancer\\PortfolioRebalancer.csproj|c:\\users\\hp\\desktop\\milltech\\portfoliorebalancer\\portfoliorebalancer\\models\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04AF82D-BD5B-41E9-B168-2149738C8975}|PortfolioRebalancer\\PortfolioRebalancer.csproj|solutionrelative:portfoliorebalancer\\models\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04AF82D-BD5B-41E9-B168-2149738C8975}|PortfolioRebalancer\\PortfolioRebalancer.csproj|c:\\users\\hp\\desktop\\milltech\\portfoliorebalancer\\portfoliorebalancer\\models\\rebalanceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04AF82D-BD5B-41E9-B168-2149738C8975}|PortfolioRebalancer\\PortfolioRebalancer.csproj|solutionrelative:portfoliorebalancer\\models\\rebalanceresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E769C0D-5959-4671-8A39-E662E5C36516}|PortfolioRebalancer.Tests\\PortfolioRebalancer.Tests.csproj|c:\\users\\hp\\desktop\\milltech\\portfoliorebalancer\\portfoliorebalancer.tests\\exposurebalancertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E769C0D-5959-4671-8A39-E662E5C36516}|PortfolioRebalancer.Tests\\PortfolioRebalancer.Tests.csproj|solutionrelative:portfoliorebalancer.tests\\exposurebalancertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-11-09T13:33:53.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RebalanceResult.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer\\Models\\RebalanceResult.cs",
+              "RelativeDocumentMoniker": "PortfolioRebalancer\\Models\\RebalanceResult.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer\\Models\\RebalanceResult.cs",
+              "RelativeToolTip": "PortfolioRebalancer\\Models\\RebalanceResult.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T13:12:55.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer.Console\\Program.cs",
+              "RelativeDocumentMoniker": "PortfolioRebalancer.Console\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer.Console\\Program.cs",
+              "RelativeToolTip": "PortfolioRebalancer.Console\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T17:16:19.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExposureBalancerTests.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer.Tests\\ExposureBalancerTests.cs",
+              "RelativeDocumentMoniker": "PortfolioRebalancer.Tests\\ExposureBalancerTests.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer.Tests\\ExposureBalancerTests.cs",
+              "RelativeToolTip": "PortfolioRebalancer.Tests\\ExposureBalancerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T17:12:49.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExposureBalancer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer\\Services\\ExposureBalancer.cs",
+              "RelativeDocumentMoniker": "PortfolioRebalancer\\Services\\ExposureBalancer.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer\\Services\\ExposureBalancer.cs",
+              "RelativeToolTip": "PortfolioRebalancer\\Services\\ExposureBalancer.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAADwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T17:11:49.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer\\Models\\Entity.cs",
+              "RelativeDocumentMoniker": "PortfolioRebalancer\\Models\\Entity.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MillTech\\PortfolioRebalancer\\PortfolioRebalancer\\Models\\Entity.cs",
+              "RelativeToolTip": "PortfolioRebalancer\\Models\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T17:10:50.202Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
