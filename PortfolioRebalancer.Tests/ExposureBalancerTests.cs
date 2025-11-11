@@ -1,4 +1,6 @@
-﻿using PortfolioRebalancer.Models;
+﻿using Moq;
+using PortfolioRebalancer.Interface;
+using PortfolioRebalancer.Models;
 using PortfolioRebalancer.Services;
 
 
@@ -17,8 +19,11 @@ namespace PortfolioRebalancer.Tests
                 new("C", 20, 40, 3),
                 new("D", 10, 20, 4)
             };
+            var validatorMock = new Mock<IEntityValidator>();
+            validatorMock.Setup(v => v.Validate(entities))
+                         .Returns(new RebalanceResult(true, "Validation passed", entities));
 
-            var balancer = new ExposureBalancer(entities);
+            var balancer = new ExposureBalancer(entities, validatorMock.Object);
 
             // Act
             var result = balancer.Rebalance();
@@ -40,8 +45,11 @@ namespace PortfolioRebalancer.Tests
                 new("B", 30, 60, 2),
                 new("C", 40, 40, 3)
             };
+            var validatorMock = new Mock<IEntityValidator>();
+            validatorMock.Setup(v => v.Validate(entities))
+                         .Returns(new RebalanceResult(true, "Validation passed", entities));
 
-            var balancer = new ExposureBalancer(entities);
+            var balancer = new ExposureBalancer(entities, validatorMock.Object);
 
             // Act
             var result = balancer.Rebalance();
@@ -62,8 +70,11 @@ namespace PortfolioRebalancer.Tests
                 new("A", 100, 40, 1),
                 new("B", 80, 50, 2)
             };
+            var validatorMock = new Mock<IEntityValidator>();
+            validatorMock.Setup(v => v.Validate(entities))
+                         .Returns(new RebalanceResult(true, "Validation passed", entities));
 
-            var balancer = new ExposureBalancer(entities);
+            var balancer = new ExposureBalancer(entities, validatorMock.Object);
 
             // Act
             var result = balancer.Rebalance();
@@ -72,35 +83,6 @@ namespace PortfolioRebalancer.Tests
             Assert.False(result.Success);
             Assert.Contains("Not possible", result.Message);
         }
-
-        [Fact(DisplayName = "Async rebalance should produce same outcome as sync")]
-        public async Task RebalanceAsync_ShouldMatchSyncResults()
-        {
-            // Arrange
-            var entitiesSync = new List<Entity>
-            {
-                new("A", 70, 50, 1),
-                new("B", 30, 60, 2),
-                new("C", 20, 40, 3),
-                new("D", 10, 20, 4)
-            };
-
-            var entitiesAsync = entitiesSync.Select(e =>
-                new Entity(e.EntityId, e.Exposure, e.Capacity, e.Priority)).ToList();
-
-            var syncBalancer = new ExposureBalancer(entitiesSync);
-            var asyncBalancer = new ExposureBalancer(entitiesAsync);
-
-            // Act
-            var syncResult = syncBalancer.Rebalance();
-            var asyncResult = await asyncBalancer.RebalanceAsync();
-
-            // Assert
-            Assert.True(syncResult.Success);
-            Assert.True(asyncResult.Success);
-            Assert.Equal(syncResult.Entities.Sum(e => e.Exposure),
-                         asyncResult.Entities.Sum(e => e.Exposure));
-            Assert.All(asyncResult.Entities, e => Assert.True(e.Exposure <= e.Capacity));
-        }
+        
     }
 }

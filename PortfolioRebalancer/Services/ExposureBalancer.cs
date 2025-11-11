@@ -1,14 +1,17 @@
 ﻿using PortfolioRebalancer;
+using PortfolioRebalancer.Interface;
 using PortfolioRebalancer.Models;
 
 namespace PortfolioRebalancer.Services
 {
     public class ExposureBalancer
     {
-        private  List<Entity> Entities;
-        public ExposureBalancer(List<Entity> entities)
+        private readonly List<Entity> Entities;
+        private readonly IEntityValidator _validator;
+        public ExposureBalancer(List<Entity> entities, IEntityValidator validator)
         {
             Entities = entities;
+            _validator = validator;
         }
 
         // Synchronous version
@@ -16,18 +19,10 @@ namespace PortfolioRebalancer.Services
         {
             try
             {
-                //Null check for entities 
-                if (Entities == null || Entities.Count == 0)
-                    return new RebalanceResult(false, "No entities provided.", Entities);
-
-                // Validation for negative values
-                var invalidEntities = Entities.Where(e => e.Exposure < 0 || e.Capacity < 0).ToList();
-
-                if (invalidEntities.Any())
-                {
-                    var invalidList = string.Join(", ", invalidEntities.Select(e => e.EntityId));
-                    return new RebalanceResult(false,$"Invalid data: Entities with negative exposure or capacity detected. [{invalidList}]",Entities);
-                }
+                // validation check for entities and negative values
+                var validationResult = _validator.Validate(Entities);
+                if (!validationResult.Success)
+                    return validationResult;
 
                 decimal totalExposure = GetTotalExposure(); 
                 decimal totalCapacity = Entities.Sum(e => e.Capacity);

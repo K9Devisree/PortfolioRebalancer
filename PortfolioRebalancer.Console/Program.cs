@@ -15,14 +15,15 @@ namespace PortfolioRebalancer
                 // Synchronous rebalance
                 var entities = new List<Entity>
             {
-                new("A", 80, 50, 1),
+                new("A", 70, 50, 1),
                 new("B", 30, 60, 2),
                 new("C", 20, 40, 3),
                 new("D", 10, 20, 4)
             };
 
                 PrintEntities("Before Rebalance", entities);
-                var balancer = new ExposureBalancer(entities);
+                var validator = new EntityValidator();
+                var balancer = new ExposureBalancer(entities,validator);
                 var result = balancer.Rebalance();
                 Console.WriteLine($"\n[Sync] {result.Message}");
                 if(result.Success)
