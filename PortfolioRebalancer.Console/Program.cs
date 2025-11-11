@@ -25,6 +25,7 @@ namespace PortfolioRebalancer
                 var balancer = new ExposureBalancer(entities);
                 var result = balancer.Rebalance();
                 Console.WriteLine($"\n[Sync] {result.Message}");
+                if(result.Success)
                 PrintEntities("After Sync Rebalance", result.Entities);
 
 
